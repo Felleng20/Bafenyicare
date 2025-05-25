@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bafenyi Care Centre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
 /* Main Color Palette */
 :root {
@@ -145,7 +146,7 @@ h2:after {
     z-index: 100;
 }
 
-header {
+.header-container {
     background: white;
     color: var(--text-dark);
     padding: 1.5rem 2rem;
@@ -230,7 +231,7 @@ p {
     height: 80vh;
     min-height: 500px;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('path-to-nature-image.jpg');
+                url('images/Facility.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -379,6 +380,168 @@ p {
     line-height: 1.6;
 }
 
+/* Values Section */
+.values-section {
+    padding: 80px 0;
+    background-color: var(--background-light);
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+}
+
+.value-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.value-item span {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Management Section */
+.management-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.management-profile {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.management-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.management-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.management-details {
+    flex: 1;
+}
+
+.management-details h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.position {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.management-details p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #555;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-top: 3px;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary-color);
@@ -392,6 +555,10 @@ p {
     margin-bottom: 40px;
 }
 
+.footer-logo {
+    flex: 1;
+}
+
 .footer-logo img {
     height: 70px;
     margin-bottom: 15px;
@@ -400,6 +567,10 @@ p {
 .footer-logo p {
     color: var(--secondary-color);
     line-height: 1.6;
+}
+
+.footer-links {
+    flex: 1;
 }
 
 .footer-links h3 {
@@ -419,6 +590,22 @@ p {
 
 .footer-links a:hover {
     color: white;
+}
+
+.footer-registration {
+    flex: 1;
+}
+
+.footer-registration h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-registration p {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .footer-bottom {
@@ -533,17 +720,35 @@ p {
         margin-right: 0;
     }
 }
- <style>
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/Logo.png" alt="Bafenyi Care Centre Logo" class="logo">
-            <div>
-                <h1>BAFENYI CARE CENTRE</h1>
-                <p>World-class care for individuals with physical disabilities</p>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> 082 923 1854</span>
+                <span><i class="fas fa-envelope"></i> bafenyicare@gmail.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-text">
+                    <h1>BAFENYI CARE CENTRE</h1>
+                    <p>World-class care for individuals with physical disabilities</p>
+                </div>
+                <div class="logo">
+                    <img src="images/Logo.png" alt="Bafenyi Care Centre Logo">
+                </div>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -694,7 +899,7 @@ p {
             <h2>Our Management</h2>
             <div class="management-profile">
                 <div class="management-image">
-                    <img src="director.jpg" alt="Mamonare Tshoane">
+                    <img src="images/director.jpg" alt="Mamonare Tshoane">
                 </div>
                 <div class="management-details">
                     <h3>Mamonare Tshoane</h3>
@@ -744,7 +949,7 @@ p {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="Logo.png" alt="Bafenyi Care Centre Logo">
+                    <img src="images/Logo.png" alt="Bafenyi Care Centre Logo">
                     <p>Providing compassionate care for individuals with disabilities since 2024.</p>
                 </div>
                 <div class="footer-links">
@@ -778,7 +983,7 @@ p {
     <script>
         // Mobile menu toggle
         document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('.main-nav ul').classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('active');
         });
         
         // Smooth scrolling for anchor links
