@@ -3,314 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bafenyi Care Centre - World-Class Disability Care</title>
+    <title>Bafenyi Care Centre - Disability Care Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        :root {
-            --primary-color: #2a5885;
-            --secondary-color: #4a8bc9;
-            --accent-color: #e67e22;
-            --light-color: #f5f5f5;
-            --dark-color: #333;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--dark-color);
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin-right: 1rem;
-        }
-        
-        nav {
-            background-color: var(--dark-color);
-            padding: 1rem 0;
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav li {
-            margin: 0 1.5rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--accent-color);
-        }
-        
-        .hero {
-            background: url('care-centre-image.jpg') center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            padding: 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: #d35400;
-        }
-        
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--primary-color);
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        
-        .service-card {
-            background-color: var(--light-color);
-            padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-card h3 {
-            color: var(--primary-color);
-        }
-        
-        .values-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .value-item {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .contact-info {
-            background-color: var(--light-color);
-            padding: 2rem;
-            border-radius: 5px;
-        }
-        
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            nav li {
-                margin: 0.5rem 0;
-            }
-            
-            .hero {
-                height: 50vh;
-            }
-        }
+        /* CSS will go here */
+        /* We'll add this in the next section */
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Logo">
-            <div>
-                <h1>BAFENYI CARE CENTRE</h1>
-                <p>World-class care for individuals with physical disabilities</p>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> 082 923 1854</span>
+                <span><i class="fas fa-envelope"></i> bafenyicare@gmail.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="bafenyi-logo.png" alt="Bafenyi Care Centre Logo"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#values">Our Values</a></li>
+                    <li><a href="#management">Management</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#values">Our Values</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="home" class="hero">
+
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-content">
-            <h2>Creating a Complete World for Our Residents</h2>
-            <p>Providing exceptional care services to individuals with physical disabilities in a world-class facility designed for their unique needs.</p>
-            <a href="#contact" class="btn">Contact Us Today</a>
+            <h1>Compassionate Care for Individuals with Disabilities</h1>
+            <p>Providing world-class care services in a supportive, inclusive environment</p>
+            <a href="#contact" class="btn">Contact Us</a>
         </div>
     </section>
-    
-    <section id="about">
-        <h2 class="section-title">About Bafenyi Care Centre</h2>
-        <div>
-            <p>Bafenyi Care Centre is a non-profit organisation registered with the Department of Social Development and the Companies and Intellectual Property Commission (CIPC) in South Africa.</p>
-            <p>Our objective is to provide out-of-this-world care services to needy individuals with physical disabilities. We have realized that due to challenging economic factors, individuals with disabilities are often neglected or not properly cared for.</p>
-            <p>Our program is based on in-house hosting of disabled individuals at our world-class facility that is specially designed to accommodate different types of disabilities without any struggle of movement or limitations in accessing life-fulfilling moments.</p>
-        </div>
-    </section>
-    
-    <section id="services">
-        <h2 class="section-title">Our Core Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Full Care</h3>
-                <p>Provided to the frailest residents who need special attention on a full-time basis with a dedicated care worker at all times.</p>
-            </div>
-            <div class="service-card">
-                <h3>Dependent Care</h3>
-                <p>For residents who can perform certain tasks without full-time care but need close supervision from time to time.</p>
-            </div>
-            <div class="service-card">
-                <h3>Semi-dependent Care</h3>
-                <p>For residents who can perform most duties independently but need assistance with others due to their disability.</p>
-            </div>
-            <div class="service-card">
-                <h3>Monitoring Care</h3>
-                <p>For residents who only need periodic monitoring based on certain activities affected by their disability.</p>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Bafenyi Care Centre</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Bafenyi Care Centre is a non-profit organisation registered with the Department of Social Development and the Companies and Intellectual Property Commission (CIPC) in South Africa.</p>
+                    <p>Our objective is to provide exceptional care services to individuals with physical disabilities, creating a home-like environment that promotes holistic development and well-being.</p>
+                    <p>We welcome individuals from the age of 18 years, with capacity for 20 residents (16 sharing and 4 single rooms based on needs and preferences).</p>
+                </div>
+                <div class="about-image">
+                    <img src="facility-exterior.jpg" alt="Bafenyi Care Centre Facility">
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="values">
-        <h2 class="section-title">Our Core Values</h2>
-        <div class="values-list">
-            <div class="value-item">
-                <h3>Inclusivity</h3>
-                <p>Client-focused approach for all residents</p>
+
+    <!-- Mission/Vision Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-box">
+                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                <p>To be the best, preferred and caring disability centre in the Country.</p>
             </div>
-            <div class="value-item">
-                <h3>Quality</h3>
-                <p>Timely and professional services</p>
-            </div>
-            <div class="value-item">
-                <h3>Integrity</h3>
-                <p>Honest and objective in all we do</p>
-            </div>
-            <div class="value-item">
-                <h3>Professionalism</h3>
-                <p>Highly trained and compassionate staff</p>
-            </div>
-            <div class="value-item">
-                <h3>Team Work</h3>
-                <p>Collaborative approach to care</p>
-            </div>
-            <div class="value-item">
-                <h3>Safety</h3>
-                <p>Health and safety as priority</p>
+            <div class="mission-box">
+                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                <p>To achieve our vision through investing in quality employees, best facility and effective well researched programs.</p>
             </div>
         </div>
     </section>
-    
-    <section id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact-info">
-            <h3>Organisational Details</h3>
-            <p><strong>Name:</strong> BAFENYI CARE CENTRE</p>
-            <p><strong>Nature of Business:</strong> Non-Profit Organisation</p>
-            <p><strong>Registration Numbers:</strong> NPC 2024 / 634194 / 08 & 314-841 NPO</p>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Care Services</h2>
+            <p class="section-intro">We offer personalized care services tailored to each resident's needs:</p>
             
-            <h3>Addresses</h3>
-            <p><strong>Business Address:</strong><br>
-            55 Jollify Main Road<br>
-            Mooikloof<br>
-            Pretoria<br>
-            0059</p>
-            
-            <p><strong>Postal Address:</strong><br>
-            PO Box 92032<br>
-            Mooikloof<br>
-            Pretoria<br>
-            0081</p>
-            
-            <h3>Contact Information</h3>
-            <p><strong>Contact Person:</strong> Mamonare Tshoane (Chairperson and Director General)</p>
-            <p><strong>Phone:</strong> 082 923 1854</p>
-            <p><strong>Email:</strong> <a href="mailto:bafenyicare@gmail.com">bafenyicare@gmail.com</a> or <a href="mailto:manager@bafenyicare.co.za">manager@bafenyicare.co.za</a></p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Full Care</h3>
+                    <p>For residents who need special attention on a full-time basis with a dedicated care worker.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Dependent Care</h3>
+                    <p>For residents who can perform certain tasks but require close supervision from time to time.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Semi-dependent Care</h3>
+                    <p>For residents who can perform most duties but need assistance with specific activities.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Monitoring Care</h3>
+                    <p>For residents who only need periodic monitoring based on activities affected by their disability.</p>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2024 Bafenyi Care Centre. All Rights Reserved.</p>
-        <p>Providing world-class care for individuals with physical disabilities in Pretoria, South Africa.</p>
+
+    <!-- Values Section -->
+    <section id="values" class="values-section">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-list">
+                <div class="value-item">
+                    <i class="fas fa-users"></i>
+                    <span>Inclusivity and Client Focus</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Quality and Timely Services</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Integrity and Objectivity</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Professionalism</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Honesty</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-lock"></i>
+                    <span>Confidentiality</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Accountability</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-people-carry"></i>
+                    <span>Team Work</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Health and Safety</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Section -->
+    <section id="management" class="management-section">
+        <div class="container">
+            <h2>Our Management</h2>
+            <div class="management-profile">
+                <div class="management-image">
+                    <img src="director.jpg" alt="Mamonare Tshoane">
+                </div>
+                <div class="management-details">
+                    <h3>Mamonare Tshoane</h3>
+                    <p class="position">Chairperson and Director General</p>
+                    <p>The organization operates under the full management of Ms. Mamonare Tshoane as the Director General, supported by a competent Board of Directors and qualified staff members.</p>
+                    <p>Our team is committed to ensuring a safe, healthy and conducive environment for each resident.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 55 Jollify Main Road, Mooikloof, Pretoria, 0059</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> bafenyicare@gmail.com / manager@bafenyicare.co.za</p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 082 923 1854</p>
+                    <p><i class="fas fa-mail-bulk"></i> <strong>Postal Address:</strong> PO Box 92032, Mooikloof, Pretoria, 0081</p>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="bafenyi-logo-white.png" alt="Bafenyi Care Centre Logo">
+                    <p>Providing compassionate care for individuals with disabilities since 2024.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#values">Our Values</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-registration">
+                    <h3>Registration</h3>
+                    <p>NPC 2024 / 634194 / 08</p>
+                    <p>314-841 NPO</p>
+                    <p>Registered with Department of Social Development</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bafenyi Care Centre. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
