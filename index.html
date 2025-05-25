@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Bafenyi Care Centre - Disability Care Services</title>
-    <link rel="stylesheet" href="index.html">
+    <title>Bafenyi Care Centre</title>
     <style>
-        /* Reset and Base Styles */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,11 +125,62 @@ h2:after {
     z-index: 100;
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+ header {
+            background: linear-gradient(135deg, #2a5885, #4a8bc9);
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem; /* Space between logo and text */
+            width: 100%;
+            justify-content: flex-end; /* Pushes content to the right */
+        }
+
+        .logo {
+            width: 150px; /* Increased from 120px */
+            height: 150px;
+            order: 2; /* Moves logo to the right side */
+        }
+
+        .logo-text {
+            order: 1; /* Text will appear left of the logo */
+            text-align: right; /* Align text to the right */
+            margin-right: auto; /* Pushes text to the left */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .logo {
+                order: 1;
+                width: 120px;
+                height: 120px;
+            }
+            
+            .logo-text {
+                order: 2;
+                text-align: center;
+            }
 
 .logo img {
     height: 70px;
@@ -681,7 +730,7 @@ h2:after {
 <body>
     <header>
         <div class="logo-container">
-            <img src="media/Logo.png" alt="Bafenyi Care Centre Logo" class="logo">
+            <img src="images/Logo.png" alt="Bafenyi Care Centre Logo" class="logo">
             <div>
                 <h1>BAFENYI CARE CENTRE</h1>
                 <p>World-class care for individuals with physical disabilities</p>
