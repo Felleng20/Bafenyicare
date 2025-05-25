@@ -5,7 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bafenyi Care Centre</title>
     <style>
- {
+/* Main Color Palette */
+:root {
+  --primary-color: #5a8f72;  /* Soft green - main brand color */
+  --secondary-color: #e8d5b5; /* Cream/beige - accents */
+  --accent-color: #d4a373;    /* Warm terracotta - buttons/CTAs */
+  --text-dark: #333333;       /* Dark gray - primary text */
+  --text-light: #f8f9fa;      /* Light cream - text on dark */
+  --background-light: #f8f5f0;/* Light beige background */
+}
+
+/* Typography */
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Navigation */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('path-to-nature-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .hero {
+    padding: 60px 0;
+  }
+}
+Key characteristics of Fleurenville's style that this CSS captures:
+
+Color Palette: Earthy greens, creams, and terracotta tones
+
+Typography: Elegant serif headings (Playfair Display) with clean sans-serif body text
+
+Spacing: Ample white space and clean layouts
+
+Imagery: Nature-inspired backgrounds with subtle overlays
+
+Buttons: Softly rounded with smooth hover effects
+
+Cards: Clean white cards with subtle shadows
+
+To fully match their exact styling, you would need to:
+
+Include the exact same Google Fonts (Montserrat and Playfair Display)
+
+Add their specific imagery
+
+Adjust spacing values to match their proportions
+
+Include any custom animations they use
+
+Would you like me to refine any particular aspect of this style to better match a specific section of their site?
+
+Please correct and revise this code to match the above:  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -726,6 +870,538 @@ h2:after {
     }
 }
     </style>
+Here's the revised CSS code that matches Fleurenville's elegant, nature-inspired aesthetic:
+
+css
+/* Main Color Palette */
+:root {
+  --primary-color: #5a8f72;  /* Soft green - main brand color */
+  --secondary-color: #e8d5b5; /* Cream/beige - accents */
+  --accent-color: #d4a373;    /* Warm terracotta - buttons/CTAs */
+  --text-dark: #333333;       /* Dark gray - primary text */
+  --text-light: #f8f9fa;      /* Light cream - text on dark */
+  --background-light: #f8f5f0;/* Light beige background */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-color);
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.contact-info i, .social-icons a {
+    margin-right: 5px;
+    color: white;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+header {
+    background: white;
+    color: var(--text-dark);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    order: 2;
+}
+
+.logo-text {
+    order: 1;
+    text-align: right;
+    margin-right: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 25px;
+}
+
+.main-nav a {
+    font-weight: 500;
+    color: var(--text-dark);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active, .main-nav a:hover {
+    color: var(--primary-color);
+}
+
+.main-nav a.active:after, .main-nav a:hover:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('path-to-nature-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 60px 0;
+    background-color: var(--secondary-color);
+}
+
+.mission-section .container {
+    display: flex;
+    gap: 30px;
+}
+
+.mission-box {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.mission-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.mission-box i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.mission-box p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo img {
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.footer-links h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.footer-social a {
+    margin-left: 15px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .about-content, 
+    .management-profile,
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .mission-section .container {
+        flex-direction: column;
+    }
+    
+    .mission-box {
+        margin-bottom: 30px;
+    }
+    
+    .about-image, 
+    .management-image {
+        margin-top: 30px;
+    }
+    
+    .footer-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .main-nav li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .top-bar .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    /* Logo container adjustments for mobile */
+    .logo-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .logo {
+        order: 1;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .logo-text {
+        order: 2;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+ <style>
 </head>
 <body>
     <header>
